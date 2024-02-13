@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body{
+    background-image: linear-gradient(to right, #141e30, #243b55);
+    /* max-height: 100vh; */
+    /* overflow: hidden; */
+}
+
+*{
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.budget-container{
+    position: absolute;
+    width: 90%;
+    height: 100px;
+    top: 0%;
+    left: 5%;
+    background: transparent;
+}
+
+.login ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#first-text{
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+}
+
+.budget-header .balance{
+    margin-top: 0;
+    margin-left: 47%;
+}
+
+.budget-header .balance .title{
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.budget-header .balance .value{
+    color: #fff;
+    font-size: 2em;
+    margin-top: 0;
+    text-align: left;
+}
+
+.budget-header .value{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.budget-header .account{
+    display: block;
+    width: 310px;
+    margin: 35px auto 0;
+    line-height: 1.7em;
+    text-align: center;
+}
+
+.budget-header .account .income, .outcome{
+    font-size: 20px;
+    height: 50px;
+    display: inline-block;
+    width: 100px;
+    vertical-align: middle;
+}
+
+.budget-header .account .income .title{
+    color: #fff;
+    opacity: 0.5;
+}
+
+.budget-header .account .income .income-total{
+    color: #fff;
+}
+
+.budget-header .account .outcome .title{
+    color: #fff;
+    opacity: 0.5;
+}
+
+.budget-header .account .outcome .outcome-total{
+    color: #f0624d;
+}
+
+/*Dashboard*/
+.budget-dashboard{
+    display: block;
+    width: 600px;
+    height: 425px;
+    background-color: #fff;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 30px 30px 0 0;
+}
+
+.toggle{
+    display: block;
+    margin-top: 30px;
+    margin-left: 30%;
+}
+
+.toggle .tab1, .tab2, .tab3{
+    margin-top: 20px;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 25px;
+    color: #1a0034;
+    opacity: 0.4;
+}
+
+.toggle .tab2, .tab3{
+    margin-left: 10px;
+}
+
+.active{
+    opacity: 1 !important;
+}
+
+.hide{
+    display: none;
+}
+
+/*all*/
+.budget-dashboard #all{
+    width: 300px;
+    height: 339px;
+    position: relative;
+}
+
+.budget-dashboard #all ul{
+    width: 360px;
+    height: 285px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+.budget-dashboard #all ul .list li{
+    position: relative;
+    font-size: 1em;
+}
+
+.budget-dashboard #all ul .list li *{
+    display: inline-block;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.budget-dashboard #all ul.list li .entry{
+    width:250px;
+    height: auto;
+    padding-left: 70px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    word-wrap: break-word;
+    margin-left: 20px;
+    font-size: 19px;
+}
+
+.budget-dashboard #all ul.list li #delete{
+    position: absolute;
+    width:20px;
+    height: 20px;
+    right: 20px;
+    cursor: pointer;
+    margin-top: -34px;
+    background-color: #243b55;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+.budget-dashboard #all ul.list li.expense{
+    color: #f0624d;
+}
+
+/*expense*/
+.budget-dashboard #expense{
+    width: 300px;
+    height: 339px;
+    position: relative;
+}
+
+.budget-dashboard #expense .input{
+    position: absolute;
+    display: block;
+    width: 600px;
+    bottom: 0;
+    border-top: 1px solid #ccc;
+}
+
+.budget-dashboard #expense .input *{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.budget-dashboard #expense .input input#expense-title-input{
+    height: 40px;
+    width : 350px;
+    padding-left: 20px;
+    font-size: 1.2em;
+    margin: 5px;
+    margin-left: 15px;
+    border-radius: 10px 0 0 10px;
+    border: 1px solid #ccc;
+}
+
+.budget-dashboard #expense .input input#expense-amount-input{
+    height: 40px;
+    width : 115px;
+    padding-left: 10px;
+    font-size: 1.2em;
+    margin: 5px;
+    margin-left: -8px;
+    border-radius: 0 10px 10px 0;
+    border: 1px solid #ccc;
+}
+
+.budget-dashboard #expense .input .add-expense .exp-btn{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #243b55;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+.budget-dashboard #expense ul{
+    width: 360px;
+    height: 285px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+.budget-dashboard #expense ul.list li{
+    position: relative;
+    font-size: 1em;
+}
+
+.budget-dashboard #expense ul.list li *{
+    display: inline-block;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.budget-dashboard #expense ul.list li .entry{
+    width:250px;
+    height: auto;
+    padding-left: 70px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    word-wrap: break-word;
+    color: #f0624d;
+    margin-left: 20px;
+    font-size: 19px;
+}
+
+.budget-dashboard #expense ul.list li #delete{
+    position: absolute;
+    width:20px;
+    height: 20px;
+    right: 20px;
+    cursor: pointer;
+    margin-top: 21px;
+    background-color: #243b55;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+/*Income*/
+.budget-dashboard #income{
+    width: 300px;
+    height: 339px;
+    position: relative;
+}
+
+.budget-dashboard #income .input{
+    position: absolute;
+    display: block;
+    width: 600px;
+    bottom: 0;
+    border-top: 1px solid #ccc;
+}
+
+.budget-dashboard #income .input *{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.budget-dashboard #income .input input#income-title-input{
+    height: 40px;
+    width : 350px;
+    padding-left: 20px;
+    font-size: 1.2em;
+    margin: 5px;
+    margin-left: 15px;
+    border-radius: 10px 0 0 10px;
+    border: 1px solid #ccc;
+}
+
+.budget-dashboard #income .input input#income-amount-input{
+    height: 40px;
+    width : 115px;
+    padding-left: 10px;
+    font-size: 1.2em;
+    margin: 5px;
+    margin-left: -8px;
+    border-radius: 0 10px 10px 0;
+    border: 1px solid #ccc;
+}
+
+.budget-dashboard #income .input .add-income .inc-btn{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #243b55;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+.budget-dashboard #income ul{
+    width: 360px;
+    height: 285px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top:20px;
+    overflow-x: auto;
+}
+
+.budget-dashboard #income ul.list li{
+    position: relative;
+    font-size: 1em;
+}
+
+.budget-dashboard #income ul.list li *{
+    display: inline-block;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.budget-dashboard #income ul.list li .entry{
+    width:250px;
+    height: auto;
+    padding-left: 70px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    word-wrap: break-word;
+    margin-left: 20px;
+    font-size: 19px;
+}
+
+.budget-dashboard #income ul.list li #delete{
+    position: absolute;
+    width:22px;
+    height: 20px;
+    right: 20px;
+    cursor: pointer;
+    margin-top: 21px;
+    background-color: #243b55;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+/* Login */
+.content-box {
+    margin: 80px auto;
+    width: 500px;
+    height: 400px;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    padding: 40px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 30px;
+}
+
+.reg-txt {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    margin-top: 10px;
+}
+
+.cred-input {
+    color: black;
+    padding: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1.5px solid rgba(128, 128, 128, 0.33);
+    width: 60%;
+    height: 40px;
+}
+
+.cred-input:focus{
+    outline-style: none;
+    border: 1.5px solid rgba(128, 128, 128, 0.65);
+}
+
+#submit {
+    font-size: 18px;
+    font-weight: 400;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#submit:hover{
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#submit:active{
+    background-color: black;
+}
+
+.loginwrapper{
+    z-index: 20;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.loginwrapper::before{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}

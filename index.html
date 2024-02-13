@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="Assets/style.css">
+</head>
+<body>
+    <div id="all-wrapper">
+    <div class="budget-container">
+        <div class="login">
+            <ul>
+                <li><a id="loginButton" onclick="openPopup()">Login</a></li>
+                <li><a id="logoutButton">Logout</a></li>
+            </ul>
+        </div>
+        <div class="budget-header">
+            <p id="first-text">Log in to add expense/income...</p>
+            <div class="balance" id="balance-id">
+                <div class="title">
+                    Balance
+                </div>
+                <div class="value">
+                    <small>$</small>0
+                </div>
+            </div>
+            <div class="account">
+                <div class="income">
+                    <div class="title">
+                        Income
+                    </div>
+                    <div class="income-total">
+                        <small>$</small>0
+                    </div>
+                </div>
+                <div class="outcome">
+                    <div class="title">
+                        Outcome
+                    </div>
+                    <div class="outcome-total">
+                        <small>$</small>0
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="budget-dashboard">
+            <div class="toggle">
+                <div class="tab1">Expenses</div>
+                <div class="tab2">Income</div>
+                <div class="tab3 active">All</div>
+            </div>
+            <div class="hide" id="income">
+                <ul class="list"></ul>
+                <div class="input" id="input-id">
+                    <input type="text" id="income-title-input" name="title" placeholder="Title">
+                    <input type="number" id="income-amount-input" name="amount" placeholder="$0">
+                    <div class="add-income"><button class="inc-btn">+</button></div>
+                </div>
+            </div>
+            <div class="hide" id="expense">
+                <ul class="list"></ul>
+                <div class="input" id="input-id2">
+                    <input type="text" id="expense-title-input" name="title" placeholder="Title">
+                    <input type="number" id="expense-amount-input" name="amount" id="$0" placeholder="$0">
+                    <div class="add-expense"><button class="exp-btn">+</button></div>
+                </div>
+            </div>
+            <div id="all">
+                <ul class="list" id="all-list"></ul>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="loginwrapper">
+        <div class="content-box">
+            <div class="data">
+                <p class="reg-txt">Log in</p>
+                <form>
+                    <input type="email" class="cred-input" id="email" placeholder="Email" name="email"> <br><br>
+                    <input type="password" class="cred-input" id="password" placeholder="Password" name="password"> <br><br><br>
+                    <input type="submit" value="Log in" class="cred-input" id="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+<script src="budget.js"></script>
+<script src="login.js"></script>
+
+</body>
+</html>
